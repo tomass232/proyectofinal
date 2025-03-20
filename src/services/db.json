@@ -1,0 +1,13 @@
+{
+  "usuarios": [
+    {
+      "id": "d904",
+      "nombre": "Pepe",
+      "clave": "1234",
+      "nacimiento": "2003-09-07",
+      "residencia": "propia",
+      "direccion": "Uruca",
+      "mascotas": "2"
+    }
+  ]
+}

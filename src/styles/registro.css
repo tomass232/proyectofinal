@@ -1,0 +1,45 @@
+  .container {
+    background-color: rgb(140, 179, 140); /* Gris intermedio */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(179, 177, 177);
+    width: 320px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: rgb(106, 137, 60); /* Rosa pastel */
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: rgb(86, 136, 86); /* Rosa más intenso */
+  }
+  
