@@ -7,27 +7,49 @@
     text-align: center;
   }
   
-  h1 {
+.h1 {
     font-size: 1.5rem;
     font-weight: bold;
     color: black;
     margin-bottom: 1rem;
+    text-align: center  ;
   }
   
-  form {
+.formulario-registro {
     display: flex;
     flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.cont-checks{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  input{
+    right: 35%;
+    bottom: 2.5vh;
   }
-  
-  input {
+}
+.input,.select {
     padding: 0.5rem;
     border-radius: 5px;
     outline: none;
+    border:none;
+    background: #ccc;
     transition: 0.3s;
     margin-bottom: 10px;
   }
-  
-  button {
+.cont-alquilada{
+  position: relative;
+  left: 60%;
+}
+.cont-propia{
+  position: relative;
+  left: 1 0%;
+}
+.button {
     background-color: rgb(106, 137, 60); /* Rosa pastel */
     color: white;
     font-weight: bold;
@@ -39,7 +61,7 @@
     margin-top: 10px;
   }
   
-  button:hover {
+.button:hover {
     background-color: rgb(86, 136, 86); /* Rosa más intenso */
   }
   

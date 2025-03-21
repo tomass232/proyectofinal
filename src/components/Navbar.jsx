@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <div>
             <header className="header">
-                <h1>Adopciones de Mascotas</h1>
+                <h1>Bienestar animal by tt</h1>
             </header>
 
             <nav className="navbar">

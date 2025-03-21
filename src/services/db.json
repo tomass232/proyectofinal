@@ -8,6 +8,47 @@
       "residencia": "propia",
       "direccion": "Uruca",
       "mascotas": "2"
+    },
+    {
+      "id": "b980",
+      "nombre": "Tomás",
+      "clave": "maripaz",
+      "nacimiento": "2008-01-11",
+      "residencia": "",
+      "direccion": "cdcwdcwc",
+      "mascotas": "1",
+      "espacio": "alquilada"
+    },
+    {
+      "id": "37e5",
+      "nombre": "maripaz",
+      "clave": "tomas",
+      "nacimiento": "2007-07-01",
+      "residencia": "",
+      "direccion": "rfdeff",
+      "mascotas": "0",
+      "espacio": "alquilada"
+    },
+    {
+      "id": "422f",
+      "nombre": "princesa",
+      "clave": "dilii",
+      "nacimiento": "2025-03-13",
+      "residencia": "",
+      "direccion": "fvfvf",
+      "mascotas": "1",
+      "espacio": "alquilada"
+    },
+    {
+      "id": "1a18",
+      "nombre": "Pepe",
+      "clave": "1234",
+      "nacimiento": "2025-03-21",
+      "residencia": "priopia",
+      "direccion": "Por ahí",
+      "mascotas": "2",
+      "espacio": "alquilada"
     }
+    
   ]
 }

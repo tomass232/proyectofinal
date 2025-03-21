@@ -4,7 +4,7 @@ function PonerEnAdopcion() {
   return (
     <>
         <Navbar/>
-        <h2></h2>
+        <h2>Poner En Adopcion</h2>
     </>
 
   )

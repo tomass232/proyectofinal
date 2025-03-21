@@ -4,7 +4,7 @@ function SobreNosotros() {
   return (
     <>
     <Navbar/>
-    <h2>princesa = dilii</h2>
+    <h2>Estamos buscando más dueños responsables</h2>
     </>
   )
 }

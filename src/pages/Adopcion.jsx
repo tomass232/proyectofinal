@@ -5,6 +5,7 @@ function Adopcion() {
   return (
     <>
       <Navbar/>
+      <h2>Adopcion</h2>
     </>
   )
 }

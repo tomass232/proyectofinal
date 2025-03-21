@@ -19,14 +19,14 @@ function Formlogin() {
     }
     return (
         <>
-            <h1>Login</h1>
-            <form>
+            <form className="formulario-login">
+                <h1 className="h1-login">Login</h1>
                 <label htmlFor="">Nombre Usuario</label>
-                <input onChange={(evento) => setNombreUsuario(evento.target.value)} type="text" />
+                <input className="input-login" onChange={(evento) => setNombreUsuario(evento.target.value)} type="text" />
                 <label htmlFor="">Clave Usuario</label>
-                <input onChange={(evento) => setClaveUsuario(evento.target.value)} type="password" />
+                <input className="input-login" onChange={(evento) => setClaveUsuario(evento.target.value)} type="password" />
                  <Link to={"/registro"}>Ir a registro</Link>
-                <button onClick={validacionUsuario}>ingresar</button>
+                <button className="button-login" onClick={validacionUsuario}>ingresar</button>
             </form>
         </>
     )

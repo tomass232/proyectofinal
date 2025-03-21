@@ -1,0 +1,42 @@
+.container {
+    background-color: rgb(140, 179, 140); 
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(179, 177, 177);
+    width: 320px;
+    text-align: center;
+  }
+  
+.h1-login {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1rem;
+    text-align: center  ;
+  }
+  
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.button-login {
+    background-color: rgb(106, 137, 60); 
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+  }
+  
+.button:hover {
+    background-color: rgb(86, 136, 86); 
+  }
+  

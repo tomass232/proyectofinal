@@ -4,7 +4,7 @@ function Adoptados() {
   return (
     <>
       <Navbar/>
-    
+    <h2>Adoptados</h2>
     </>
   )
 }
