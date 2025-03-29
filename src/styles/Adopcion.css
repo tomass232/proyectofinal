@@ -1,0 +1,13 @@
+/* Se utiliza Flexbox para organizar los elementos en una fila */
+.listaMascotas {
+    display: flex; /* Activamos Flexbox */
+    flex-direction: row; /* Los elementos se alinean horizontalmente */
+    gap: 20px; /* Espacio de 20px entre los elementos */
+}
+
+/* Estilo para las imágenes dentro de las tarjetas */
+.img-card {
+    width: auto; /* El ancho de la imagen se ajusta automáticamente */
+    object-fit: fit-content; /* Ajusta la imagen manteniendo su proporción */
+    height: 250px; /* Se define una altura fija de 250px para las imágenes */
+}

@@ -14,9 +14,9 @@ async function posData(info,endpoint){
         console.error(error)
     }
 }
-async function getInfo(endpoint) {
+async function getInfo(endpoint,id="") {
     try {
-        const peticion = await fetch (`http://localhost:3000/${endpoint}`)
+        const peticion = await fetch (`http://localhost:3000/${endpoint}/${id}`)
         const data = await peticion.json()
         console.log(data);
         return data

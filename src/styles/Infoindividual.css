@@ -1,0 +1,31 @@
+/* Estilo para la imagen con un tamaño fijo */
+.img-foto {
+    width: 350px; /* Ancho */
+    height: 255px; /* Alto */
+    justify-content: left; /* Alinea el contenido hacia la izquierda */
+}
+
+/* Centra el texto dentro del contenedor */
+.txt-foto {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Contenedor con posición absoluta */
+.cont-foto {
+    position: absolute; /* Coloca el contenedor de manera absoluta */
+}
+
+/* Estilo para el contenedor de descripción con un ancho del 30% y centrado */
+.cont-descripcion {
+    display: flex; /* Utiliza Flexbox para alinear el contenido */
+    width: 30%; /* El ancho es el 30% del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    position: relative; /* Establece la posición relativa para usar 'left' */
+    left: 60px; /* Desplaza el contenedor 60px hacia la derecha */
+}
+
+/* Estilo para el contenedor de otra información con desplazamiento */
+.cont-otraInfo {
+    position: relative; /* Establece la posición relativa para usar 'left' */
+    left: 500px; /* Desplaza el contenedor 500px hacia la derecha */
+}

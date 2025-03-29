@@ -1,67 +1,82 @@
-  .container {
-    background-color: rgb(140, 179, 140); /* Gris intermedio */
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgb(179, 177, 177);
-    width: 320px;
-    text-align: center;
-  }
-  
+/* Estilos para el contenedor principal */
+.container {
+  background-color: rgb(140, 179, 140); /* Color de fondo verde suave */
+  padding: 2rem; /* Espaciado interior */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgb(179, 177, 177); /* Sombra suave */
+  width: 320px; /* Ancho del contenedor */
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+/* Estilos para el encabezado */
 .h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: black;
-    margin-bottom: 1rem;
-    text-align: center  ;
-  }
-  
+  font-size: 1.5rem; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  color: black; /* Color del texto */
+  margin-bottom: 1rem; /* Espaciado debajo del encabezado */
+  text-align: center; /* Centra el texto */
+}
+
+/* Estilos para el formulario de registro */
 .formulario-registro {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    justify-content: center;
-    margin: 0 auto;
-    border-radius: 20px;
+  display: flex; /* Usando Flexbox */
+  flex-direction: column; /* Los elementos se apilan en una columna */
+  width: 50%; /* Ancho del formulario */
+  justify-content: center; /* Centra los elementos verticalmente */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+  border-radius: 20px; /* Bordes redondeados */
 }
-.cont-checks{
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  input{
-    right: 35%;
-    bottom: 2.5vh;
-  }
+
+/* Estilos para el contenedor de los checkboxes */
+.cont-checks {
+  display: flex; /* Usando Flexbox */
+  flex-direction: row; /* Los checkboxes están en fila */
+  gap: 20px; /* Espaciado entre los checkboxes */
 }
-.input,.select {
-    padding: 0.5rem;
-    border-radius: 5px;
-    outline: none;
-    border:none;
-    background: #ccc;
-    transition: 0.3s;
-    margin-bottom: 10px;
-  }
-.cont-alquilada{
-  position: relative;
-  left: 60%;
+
+/* Estilos para los checkboxes */
+.cont-checks input {
+  right: 35%; /* Posiciona los checkboxes hacia la derecha */
+  bottom: 2.5vh; /* Ajuste vertical */
 }
-.cont-propia{
-  position: relative;
-  left: 1 0%;
+
+/* Estilos para los inputs y selects */
+.input, .select {
+  padding: 0.5rem; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  outline: none; /* Elimina el contorno */
+  border: none; /* Sin borde */
+  background: #ccc; /* Fondo gris */
+  transition: 0.3s; /* Transición suave */
+  margin-bottom: 10px; /* Espaciado debajo del input/select */
 }
+
+/* Estilos para el contenedor de la opción "alquilada" */
+.cont-alquilada {
+  position: relative; /* Posición relativa para el contenedor */
+  left: 60%; /* Mueve el contenedor a la derecha */
+}
+
+/* Estilos para el contenedor de la opción "propia" */
+.cont-propia {
+  position: relative; /* Posición relativa para el contenedor */
+  left: 10%; /* Mueve el contenedor a la izquierda */
+}
+
+/* Estilos para el botón */
 .button {
-    background-color: rgb(106, 137, 60); /* Rosa pastel */
-    color: white;
-    font-weight: bold;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 10px;
-  }
-  
+  background-color: rgb(106, 137, 60); /* Color de fondo verde */
+  color: white; /* Texto blanco */
+  font-weight: bold; /* Negrita */
+  padding: 0.5rem; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al hacer hover */
+  transition: 0.3s; /* Transición suave */
+  margin-top: 10px; /* Espaciado superior */
+}
+
+/* Estilos para el hover en el botón */
 .button:hover {
-    background-color: rgb(86, 136, 86); /* Rosa más intenso */
-  }
-  
+  background-color: rgb(86, 136, 86); /* Cambio de color de fondo al hacer hover */
+}
