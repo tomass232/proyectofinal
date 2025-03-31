@@ -1,31 +1,55 @@
+.div-contacto {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333; /* Color de texto más elegante */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+.letra-h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold; /* Hace que resalte más */
+    color: #444; /* Un tono más estilizado */
+    margin-bottom: 8px; /* Espaciado más uniforme */
+}
+
 /* Estilo para la imagen con un tamaño fijo */
 .img-foto {
     width: 350px; /* Ancho */
     height: 255px; /* Alto */
-    justify-content: left; /* Alinea el contenido hacia la izquierda */
+    object-fit: cover; /* Asegura que la imagen mantenga proporción */
+    display: block; /* Evita espacios adicionales */
 }
 
 /* Centra el texto dentro del contenedor */
 .txt-foto {
     text-align: center; /* Centra el texto horizontalmente */
+    font-weight: bold; /* Hace que el texto resalte más */
+    color: #333; /* Un tono más profesional */
 }
 
 /* Contenedor con posición absoluta */
 .cont-foto {
     position: absolute; /* Coloca el contenedor de manera absoluta */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
 }
 
 /* Estilo para el contenedor de descripción con un ancho del 30% y centrado */
 .cont-descripcion {
     display: flex; /* Utiliza Flexbox para alinear el contenido */
     width: 30%; /* El ancho es el 30% del contenedor */
-    margin: 0 auto; /* Centra el contenedor */
-    position: relative; /* Establece la posición relativa para usar 'left' */
-    left: 60px; /* Desplaza el contenedor 60px hacia la derecha */
+    margin: 0 auto;
+    right: 50%;
+    padding: 10px; /* Agrega espacio interno */
+    border-radius: 8px; /* Suaviza los bordes */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para mejor lectura */
 }
 
 /* Estilo para el contenedor de otra información con desplazamiento */
 .cont-otraInfo {
     position: relative; /* Establece la posición relativa para usar 'left' */
     left: 500px; /* Desplaza el contenedor 500px hacia la derecha */
+    padding: 10px; /* Agrega espacio interno */
+    border-radius: 8px; /* Suaviza los bordes */
+    background-color: rgba(240, 240, 240, 0.9); /* Fondo ligeramente diferente para distinguirlo */
+    width: 350px;
 }

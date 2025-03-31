@@ -3,13 +3,14 @@ import Login from "../pages/Login"; // Importa la página Login
 import Registro from "../pages/Registro"; // Importa la página Registro
 import Home from "../pages/Home"; // Importa la página Home
 import Adopcion from "../pages/Adopcion"; // Importa la página Adopcion
-import Adoptados from "../pages/Adoptados"; // Importa la página Adoptados
 import PonerEnAdopcion from "../pages/PonerEnAdopcion"; // Importa la página PonerEnAdopcion
 import SobreNosotros from "../pages/SobreNosotros"; // Importa la página SobreNosotros
 import Anuncios from "../pages/Anuncios"; // Importa la página Anuncios
 import Contacto from "../pages/Contacto"; // Importa la página Contacto
 import InfoIndividual from "../pages/InfoIndividual"; // Importa la página InfoIndividual
 import Privada from "./Privada"; // Importa el componente Privada para proteger las rutas privadas
+import Perfil from "../pages/Perfil";
+import Publicaranuncios from "../pages/Publicaranuncios";
 
 function Routing() {
     return (
@@ -25,10 +26,11 @@ function Routing() {
 
                 {/* Definición de las rutas privadas */}
                 <Route path="/adopcion" element={<Privada children={<Privada children={<Adopcion/>}/>} />} />
-                <Route path="/adoptados" element={<Privada children={<Privada children={<Adoptados/>}/>} />} /> 
                 <Route path="/poner-en-adopcion" element={<Privada children={<Privada children={<PonerEnAdopcion/>}/>} />} /> 
                 <Route path="/anuncios" element={<Privada children={<Privada children={<Anuncios/>}/>} />} /> 
+                <Route path="/panuncios" element={<Privada children={<Privada children={<Publicaranuncios/>}/>} />} /> 
                 <Route path="/infoIndividual" element={<Privada children={<Privada children={<InfoIndividual/>}/>} />} /> 
+                <Route path="/perfil" element={<Privada children={<Privada children={<Perfil/>}/>} />} /> 
 
             </Routes>
         </Router>

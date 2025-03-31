@@ -1,9 +1,68 @@
+.div-contacto {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333; /* Color de texto más elegante */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+.letra-h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold; /* Hace que resalte más */
+    color: #444; /* Un tono más estilizado */
+    margin-bottom: 8px; /* Espaciado más uniforme */
+}
+
+/* Estilo para la imagen con un tamaño fijo */
+.img-foto {
+    width: 350px; /* Ancho */
+    height: 255px; /* Alto */
+    object-fit: cover; /* Asegura que la imagen mantenga proporción */
+    display: block; /* Evita espacios adicionales */
+}
+
+/* Centra el texto dentro del contenedor */
+.txt-foto {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-weight: bold; /* Hace que el texto resalte más */
+    color: #333; /* Un tono más profesional */
+}
+
+/* Contenedor con posición absoluta */
+.cont-foto {
+    position: absolute; /* Coloca el contenedor de manera absoluta */
+    z-index: 10; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Estilo para el contenedor de descripción con un ancho del 30% y centrado */
+.cont-descripcion {
+    display: flex; /* Utiliza Flexbox para alinear el contenido */
+    width: 30%; /* El ancho es el 30% del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    position: relative; /* Establece la posición relativa para usar 'left' */
+    left: 60px; /* Desplaza el contenedor 60px hacia la derecha */
+    padding: 10px; /* Agrega espacio interno */
+    border-radius: 8px; /* Suaviza los bordes */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para mejor lectura */
+}
+
+/* Estilo para el contenedor de otra información con desplazamiento */
+.cont-otraInfo {
+    position: relative; /* Establece la posición relativa para usar 'left' */
+    left: 500px; /* Desplaza el contenedor 500px hacia la derecha */
+    padding: 10px; /* Agrega espacio interno */
+    border-radius: 8px; /* Suaviza los bordes */
+    background-color: rgba(240, 240, 240, 0.9); /* Fondo ligeramente diferente para distinguirlo */
+}
+
 /* Estilos para el header */
 .header {
     background-color: #4CAF50; /* Color de fondo verde */
     color: white; /* Texto blanco */
-    padding: 10px 0; /* Espaciado superior e inferior */
+    padding: 15px 0; /* Espaciado superior e inferior */
     text-align: center; /* Centra el texto */
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px; /* Bordes redondeados para un diseño más limpio */
 }
 
 /* Estilos para la barra de navegación */
@@ -12,6 +71,8 @@
     display: flex; /* Utiliza Flexbox para el layout */
     justify-content: space-around; /* Espacio uniforme entre los elementos */
     align-items: center; /* Alinea los elementos verticalmente */
+    padding: 10px 0;
+    border-radius: 8px;
 }
 
 /* Estilos para los elementos de navegación */
@@ -20,6 +81,12 @@
     padding: 14px 20px; /* Espaciado alrededor del texto */
     text-decoration: none; /* Elimina el subrayado de los enlaces */
     display: block; /* Los elementos ocupan todo el espacio disponible */
+    transition: background 0.3s ease-in-out;
+}
+
+.navItem:hover {
+    background-color: #555; /* Cambio de color en hover */
+    border-radius: 4px;
 }
 
 /* Estilos para el menú desplegable */
@@ -36,6 +103,12 @@
     padding: 14px 20px; /* Espaciado dentro del botón */
     background-color: #333; /* Color de fondo oscuro */
     cursor: pointer; /* Cambia el cursor a mano para indicar que es clickeable */
+    transition: background 0.3s;
+}
+
+.dropbtn:hover {
+    background-color: #555;
+    border-radius: 4px;
 }
 
 /* Estilos para el contenido del menú desplegable */
@@ -44,6 +117,7 @@
     background-color: #333; /* Color de fondo oscuro */
     min-width: 160px; /* Ancho mínimo del menú */
     z-index: 1; /* Asegura que el menú se muestre sobre otros elementos */
+    border-radius: 4px;
 }
 
 /* Estilos para los elementos dentro del menú desplegable */
@@ -52,11 +126,12 @@
     padding: 12px 16px; /* Espaciado alrededor de cada elemento */
     text-decoration: none; /* Elimina el subrayado */
     display: block; /* Hace que cada elemento ocupe el espacio completo */
+    transition: background 0.3s ease-in-out;
 }
 
 /* Estilos para el hover en los elementos del menú desplegable */
 .dropdownItem:hover {
     background-color: #ddd; /* Color de fondo al pasar el ratón */
     color: black; /* Cambia el color del texto a negro */
+    border-radius: 4px;
 }
-

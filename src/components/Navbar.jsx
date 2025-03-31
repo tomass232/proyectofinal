@@ -3,9 +3,13 @@ import '../styles/Navbar.css'; // Se importan los estilos
 
 const Navbar = () => {
     const [dropdownVisible, setDropdownVisible] = useState(false); // Estado para controlar la visibilidad del dropdown
+    const [dropdownVisibleAnuncio, setDropdownVisibleAnuncio] = useState(false); // Estado para controlar la visibilidad del dropdown
 
     const toggleDropdown = () => {
         setDropdownVisible(!dropdownVisible); // Alterna la visibilidad del dropdown
+    };
+    const toggleDropdownAnuncio = () => {
+        setDropdownVisibleAnuncio(!dropdownVisibleAnuncio); // Alterna la visibilidad del dropdown
     };
 
     return (
@@ -26,7 +30,6 @@ const Navbar = () => {
                     </button>
                     {dropdownVisible && (
                         <div className="dropdownContent">
-                            <a href="/adoptados" className="dropdownItem">Adoptados</a>
                             <a href="/adopcion" className="dropdownItem">Para Adoptar</a>
                             <a href="/poner-en-adopcion" className="dropdownItem">Poner en Adopción</a>
                         </div>
@@ -34,9 +37,20 @@ const Navbar = () => {
                 </div>
 
                 {/* Otros enlaces de navegación */}
-                <a href="/anuncios" className="navItem">Anuncios</a>
+                <div className="dropdown">
+                    <button onClick={toggleDropdownAnuncio} className="dropbtn">
+                        Anuncios
+                    </button>
+                    {dropdownVisibleAnuncio && (
+                        <div className="dropdownContent">
+                            <a href="/panuncios" className="dropdownItem">Publicar Anuncio</a>
+                            <a href="/anuncios" className="dropdownItem">Ver Anuncios</a>
+                        </div>
+                    )}
+                </div>
                 <a href="/sobre-nosotros" className="navItem">Sobre Nosotros</a>
                 <a href="/contacto" className="navItem">Contacto</a>
+                <a href="/perfil" className="navItem" >Perfil</a>
             </nav>
         </div>
     );

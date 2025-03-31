@@ -37,6 +37,7 @@ function PonerEnAdopcion() {
       fotoMascota: fotoMascota,
       adoptado: false, // Se define que la mascota aún no ha sido adoptada
       descripcionMascota: descripcionMascota,
+      idUsuario:localStorage.getItem("idUsuario")
     };
     await posData(mascota, "adopciones"); // Envia los datos al backend
   }

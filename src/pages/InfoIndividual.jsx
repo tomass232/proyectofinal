@@ -31,13 +31,14 @@ function InfoIndividual() {
             <li>Vacunas al día: {adopcion.vacunasAlDia}</li>
             <li>Está castrado: {adopcion.castrado}</li>
             <li>Es {adopcion.sexo}</li>
-          </ul>
-        </div>
-        <section className='cont-descripcion'>
+            <section className=''>
           <article>
             <p>{adopcion.descripcionMascota}</p>
           </article>
         </section>
+          </ul>
+        </div>
+        
       </div>
     </>
   )

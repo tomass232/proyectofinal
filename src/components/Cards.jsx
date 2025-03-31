@@ -2,14 +2,14 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import "../styles/Adopcion.css"; // Se importan los estilos
 
-function Cards({img, nombre, edad, raza, vacunas, castrado, sexo, adoptado, btnEliminar, btnEditar, enter}) {
+function Cards({ img, nombre, edad, raza, vacunas, castrado, sexo, adoptado, btnEliminar, btnEditar, enter }) {
   return (
-    <Card style={{ width: '18rem' }}> 
+    <Card style={{ width: '18rem' }}>
       {/* Se muestra la imagen de la mascota */}
       <Card.Img variant="top" src={img} className='img-card' />
       <Card.Body>
         {/* Se muestra el nombre */}
-        <Card.Title>{nombre}</Card.Title> 
+        <Card.Title>{nombre}</Card.Title>
         <Card.Text>
           {/* Se muestran los detalles de la mascota */}
           <ul>
@@ -24,9 +24,9 @@ function Cards({img, nombre, edad, raza, vacunas, castrado, sexo, adoptado, btnE
           </ul>
         </Card.Text>
         {/* Botones para ver más información, eliminar y editar */}
-        <Button variant="primary" onClick={enter}>Más información</Button>
-        <Button id='delete' onClick={btnEliminar}>Eliminar</Button>
-        <Button id='editar' onClick={btnEditar}>Editar</Button>
+        <div className='d-flex flex-column gap-3'>
+          <Button variant="primary" className='btn btn-success' onClick={enter}>Más información</Button>
+          </div>
       </Card.Body>
     </Card>
   );
